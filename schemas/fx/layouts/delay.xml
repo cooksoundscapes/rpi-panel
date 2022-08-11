@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout address="/fx/delay/" title="Delay">
+    <Tabs>
+        <Tab>
+            <TextParameter address="dry" unit="db">dry</TextParameter>
+            <TextParameter address="level" unit="db">level</TextParameter>
+            <TextParameter address="time" unit="ms">time</TextParameter>
+            <TextParameter address="feedback" unit="db">feedback</TextParameter>  
+        </Tab>
+        <Tab>
+            <TextParameter address="lowpass" unit="hz">lowpass</TextParameter>
+            <TextParameter address="highpass" unit="hz">highpass</TextParameter>
+            <TextParameter address="modInt" unit="c">mod. int</TextParameter>
+            <TextParameter address="modRate" unit="hz">mod. rate</TextParameter>
+        </Tab>
+        <Tab>
+            <TextParameter address="pitch" unit="t">pitch</TextParameter>
+            <TextParameter address="magic" unit="db">magic</TextParameter>
+        </Tab>
+    </Tabs>
+</Layout>

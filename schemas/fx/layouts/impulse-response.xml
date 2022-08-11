@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout address="/fx/ir" title="IR">
+    <FolderList address="file" path="IRs" />
+    <TextParameter address="level" unit="db">level</TextParameter>
+</Layout>
