@@ -22,16 +22,21 @@ public:
         surface = cairo_image_surface_create_for_data(data, format, width, height, stride);
     }
 
-    void helloho() {
+    unsigned char* endDrawing() {
+        cairo_surface_flush(surface);
+        return data;
+    }
+
+    void drawText(std::string text) const {
+        
+    }
+
+    // testing functions
+    void testCircle() {
         cr = cairo_create(surface);
         cairo_set_source_rgb(cr, 0xFF, 0xFF, 0xFF);
         cairo_move_to(cr, 10, 10);
         cairo_arc(cr, 10, 10, 10, 0, 180);
         cairo_fill(cr);
-    }
-
-    unsigned char* endDrawing() {
-        cairo_surface_flush(surface);
-        return data;
     }
 };

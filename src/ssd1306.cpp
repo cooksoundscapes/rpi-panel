@@ -114,16 +114,3 @@ void SSD1306::drawBuffer(unsigned char* buffer)
 
 	sendData(displayData);
 }
-
-/* void SSD1306::drawPixel(int16_t x, int16_t y, colors Color)
-{
-
-	if ((x < 0) || (x >= width) || (y < 0) || (y >= height)) return;
-
-	switch(Color)
-	{
-		case colors::WHITE:   buffer[x+ (y/8) * width] |=  (1 << (y&7)); break;
-		case colors::BLACK:   buffer[x+ (y/8) * width] &= ~(1 << (y&7)); break;
-		case colors::INVERSE: buffer[x+ (y/8) * width] ^=  (1 << (y&7)); break;
-	}
-}*/ 
