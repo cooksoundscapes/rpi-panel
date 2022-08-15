@@ -14,7 +14,7 @@ public:
 
 	~PCF8574() {}
 
-	void read() {
+	void read() const {
 		auto response = i2c_smbus_read_byte_data(file, 0xff);
 		if (response < 0) {
 			std::cout << "Error reading device" << '\n';

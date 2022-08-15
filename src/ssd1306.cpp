@@ -42,13 +42,13 @@ void SSD1306::sendCommand(uint8_t command)
 	i2c_smbus_write_byte_data(file, 0x00, command);
 }
 
-void SSD1306::sendData(DisplayData data) {
+void SSD1306::sendData(DisplayData data) const {
 	for (int i{0}; i < B_SIZE; i++) {
 		i2c_smbus_write_byte_data(file, 0x40, data[i]);
 	}
 }
 
-void SSD1306::clear(int color)
+void SSD1306::clear(int color) const
 {
 	int hex = (color > 0) ? 0xFF : 0x00;
 	DisplayData buffer;
